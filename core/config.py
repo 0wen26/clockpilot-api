@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int
     google_client_id: str
     google_client_secret: str
-    DATABASE_URL: str
+    database_url: str
     class Config:
         env_file = ".env"
         extra = "allow"
