@@ -2,3 +2,5 @@
 instance/clockpilot.db
 datos_eventos.json
 datos_eventos.xlsx
+__pycache__/
+*.pyc
