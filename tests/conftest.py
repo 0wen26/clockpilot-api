@@ -10,7 +10,7 @@ from pathlib import Path
 
 # Configuración de paths
 sys.path.append(str(Path(__file__).parent.parent))
-from main import app
+from app.main import app
 
 # Configuración de la base de datos de prueba
 TEST_DATABASE_URL = "sqlite:///:memory:"

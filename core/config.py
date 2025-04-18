@@ -9,9 +9,10 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int
     google_client_id: str
     google_client_secret: str
-
+    DATABASE_URL: str
     class Config:
         env_file = ".env"
+        extra = "allow"
 
 @lru_cache()
 def get_settings():
