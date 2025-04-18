@@ -1,0 +1,16 @@
+alembic
+bcrypt
+fastapi
+httpx
+passlib[bcrypt]
+pdfminer.six
+pydantic
+pydantic-settings
+python-dotenv
+python-jose[cryptography]
+python-multipart
+psycopg2-binary
+requests
+SQLAlchemy
+starlette
+uvicorn[standard]
