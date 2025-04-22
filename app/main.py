@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from api.routes import auth, upload,  report
 import logging
+from api.routes import user
 
 # Configura logging básico
 logging.basicConfig(level=logging.INFO)
@@ -27,7 +28,8 @@ app.add_middleware(
 routers = [
     (auth.router, "/api/auth"),
     (upload.router, "/api/upload"),
-    (report.router, "/api/reports")  # <-- Solo un prefijo aquí
+    (report.router, "/api/reports"),
+    (user.router, "/api") 
 ]
 
 for router_obj, prefix in routers:
