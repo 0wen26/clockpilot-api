@@ -5,7 +5,8 @@ from sqlalchemy.orm import Session
 from database.session import get_db
 from database.models import User
 from core.security import get_current_user
-from database.schemas import UserOut
+from api.schemas.users_schema import UserOut
+
 
 router = APIRouter(prefix="/users", tags=["Users"])
 
